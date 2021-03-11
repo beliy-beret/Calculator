@@ -4,21 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./custom_page.css">
     <title>Calculator</title>    
 </head>
     <body>
         <div class="description">
             <p>
-                The calculator accepts an expression string ("3 - 2" or "V + VI").<br>
-                The following mathematical operations can be performed: "+", "-", "/", "*".<br>
-                Arguments can be both Arabic and Roman numerals ranging from "0" to "10" inclusive,<br>
+                The calculator accepts an expression string ("3 - 2" or "V + VI").
+                The following mathematical operations can be performed: "+", "-", "/", "*".
+                Arguments can be both Arabic and Roman numerals ranging from "0" to "10" inclusive,
                 arguments must be integers. Only one mathematical operation can be performed at a time.
             </p>
         </div>
-        <div>            
+        <div class="conditions">            
             <input id="arguments" type="text" placeholder="enter your string">
-            <button onclick="calculator()"> Count </button>
-            <p id="values"></p>
+            <button onclick="calculator()"> Count </button>            
+        </div>
+        <div class="response">
+            <p id="values"> <i>Answer will be here</i> </p>
         </div>
         <script src="index.js"></script>
     </body>
